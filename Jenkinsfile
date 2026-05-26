@@ -3,6 +3,11 @@ pipeline{
   stages{
     stage('build docker'){
       steps{
+        sh 'docker build -t docker-local-demo .'
+      }
+    }
+    stage('show images'){
+      steps{
         sh 'docker images'
       }
     }
