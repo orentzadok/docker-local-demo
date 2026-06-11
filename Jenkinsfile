@@ -13,7 +13,7 @@ pipeline{
     }
     stage('run container'){
       steps{
-       sh 'docker run --rm docker-local-demo'
+        echo "Run from Develop"
 }
 }
   }
