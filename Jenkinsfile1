@@ -1,0 +1,11 @@
+pipeline{
+  agent any
+
+  stages{
+    stage('branch Info'){
+      steps{
+        echo "Run from Develop"
+      }
+    }
+  }
+}
